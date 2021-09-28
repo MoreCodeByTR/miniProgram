@@ -1,0 +1,8 @@
+<!-- logs.wxml -->
+<view wx:if="{{!hasUrl}}" class="container log-list">
+  <view>扫一扫 </view>
+  <image class="img" bindtap="scanCode" src="../../../../imgs/scan.png" alt="aa"/>
+</view>
+<view wx:if="{{hasUrl}}" class="container log-list">
+   <web-view class="webview" src="{{url}}" />
+</view>

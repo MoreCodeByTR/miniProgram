@@ -1,0 +1,19 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+.item{
+  margin: 2px 0px;
+  padding: 10px 80%;
+  border: 1px solid black;
+  background-color: rgb(160, 230, 236);
+}
+
+.hover{
+  background-color: rgb(198, 239, 243);
+}

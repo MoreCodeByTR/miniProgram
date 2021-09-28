@@ -1,0 +1,7 @@
+<!-- logs.wxml -->
+<view class="container log-list">
+  <view>实验列表</view>
+  <block wx:for="{{pages}}" wx:key="timeStamp" wx:for-item="page" >
+    <view hover-class="hover" class="item" data-src="{{page}}" bind:tap="goToPage">{{page}}</view>
+  </block>
+</view>

@@ -1,13 +1,33 @@
 {
   "pages":[
+    "pages/experiment/index",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/experiment/pages/info/index",
+    "pages/experiment/pages/scan/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "微信标题",
+    "navigationBarTitleText": "欢迎欢迎",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor": "#2f54c9",
+    "list": [
+      {
+        "selectedIconPath": "/imgs/homepage_select.png",
+        "iconPath": "/imgs/homepage_unselect.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      },
+      {
+        "selectedIconPath": "/imgs/experiment_select.png",
+        "iconPath": "/imgs/experiment_unselect.png",
+        "pagePath": "pages/experiment/index",
+        "text": "实验"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

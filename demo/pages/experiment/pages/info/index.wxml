@@ -1,0 +1,15 @@
+<view>
+  <button class="userinfo" wx:if="{{canIUseGetUserProfile&&!hasUserInfo}}" bindtap="getUserProfile">获取用户信息</button>
+  <view class="avatarContainer" wx:if="{{hasUserInfo}}">
+    <image class="avatar avatarItem" src="{{userInfo.avatarUrl}}" />
+    <view class="avatarItem">我的基本信息</view>
+  </view>
+  <view class="container" wx:if="{{hasUserInfo}}">
+    <view class="item">国家:{{userInfo.country}}</view>
+    <view class="item">省份:{{userInfo.province}}</view>
+    <view class="item">城市:{{userInfo.city}}</view>
+    <view class="item">昵称:{{userInfo.nickName}}</view>
+    <view class="item">性别:{{userInfo.gender==1?'男':'女'}}</view>
+    <view class="item">语言:{{userInfo.language}}</view>
+  </view>
+</view>

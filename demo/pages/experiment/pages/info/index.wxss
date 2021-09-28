@@ -1,0 +1,47 @@
+
+.container{
+  margin: 0px;
+  padding:0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start
+}
+
+.item{
+  background-color: rgb(170, 238, 238);
+  width: 49%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.avatarContainer{
+  margin: 0px;
+  padding:0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:start;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+.avatarItem{
+  width: 49%;
+  font-size: 20px;
+}
+
+.avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.userinfo {
+  transform: translateY(500%);
+}
